@@ -1,40 +1,69 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-        <title>TFW No Girlfriend</title>
-        <link rel="shortcut icon" href="http://tfwnogirlfriend.com/favicon.ico" />
-
-        <link rel="stylesheet" href="http://tfwnogirlfriend.com/theme/css/screen.css" type="text/css" />
-        <link rel="stylesheet" href="http://tfwnogirlfriend.com/theme/css/pygments.css" type="text/css" />
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TFW No Girlfriend, ">
 
 
-    </head>
-    <body>
-<div id="header">
-            <ul id="nav">
-                <li class="ephemeral selected"><a href="http://tfwnogirlfriend.com/tags.html">tags</a></li>
-                <li><a href="http://tfwnogirlfriend.com">Home</a></li>
-<li><a href="http://tfwnogirlfriend.com/archives.html">Archives</a></li>
-            </ul>
-            <div class="header_box">
-                <h1><a href="http://tfwnogirlfriend.com">TFW No Girlfriend</a></h1>
-            </div>
-        </div>
-        <div id="wrapper">
-            <div id="content">
-<a class="tag" href="/tag/Second.html" style="font-size: 0.75em;" title="Second">Second</a>
-<a class="tag" href="/tag/First.html" style="font-size: 0.75em;" title="First">First</a>
+        <title>TFW No Girlfriend - Tags</title>
 
-                <div class="clear"></div>
-                <div id="footer">
-                    <p>
-                    Mockingbird theme by <a href="http://nevanscott.com/">Nevan Scott</a>
-                    &middot;
-                    <a class="atom" href="http://tfwnogirlfriend.com/None">Feed</a>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/pure/0.3.0/pure-min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://tfwnogirlfriend.com/theme/css/pure.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="pure-g-r" id="layout">
+        <div class="sidebar pure-u">
+            <div class="cover-img" style="background-image: url('')">
+                <div class="cover-body">
+                    <header class="header">
+                        <hgroup>
+                            <h1 class="brand-main"><a href="/">TFW No Girlfriend</a></h1>
+                            <p class="tagline"></p>
+                                <p class="social">
+                                    <a href="#">
+                                        <i class="fa fa-You can add links in your config file fa-3x"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fa fa-Another social link fa-3x"></i>
+                                    </a>
+                                <p>
+                        </hgroup>
+                    </header>
                 </div>
             </div>
-            <div class="clear"></div>
         </div>
-    </body>
+    <h1>Tags for TFW No Girlfriend</h1>        <li><a href="http://tfwnogirlfriend.com/tag/first.html">First</a> (1)</li>
+        <li><a href="http://tfwnogirlfriend.com/tag/second.html">Second</a> (1)</li>
+    </div>
+    <script>
+        var $top = $('.go-top');
+
+        // Show or hide the sticky footer button
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                $top.fadeIn(200);
+            } else {
+                $top.fadeOut(200);
+            }
+        });
+
+        // Animate the scroll to top
+        $top.click(function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 300);
+        })
+
+        // Makes sure that the href="#" attached to the <a> elements
+        // don't scroll you back up the page.
+        $('body').on('click', 'a[href="#"]', function(event) {
+            event.preventDefault();
+        });
+    </script>
+
+</body>
 </html>
